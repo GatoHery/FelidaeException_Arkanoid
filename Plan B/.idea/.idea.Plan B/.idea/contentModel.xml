@@ -7,12 +7,17 @@
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConnectionDB.cs" t="Include" />
+      <e p="CustomPictureBox.cs" t="Include" />
+      <e p="DatosJuego.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />
       <e p="Game.cs" t="Include" />
       <e p="Game.Designer.cs" t="Include" />
       <e p="Game.resx" t="Include" />
+      <e p="GamePlatform.cs" t="Include" />
+      <e p="GamePlatform.Designer.cs" t="Include" />
+      <e p="GamePlatform.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="packages.config" t="Include" />

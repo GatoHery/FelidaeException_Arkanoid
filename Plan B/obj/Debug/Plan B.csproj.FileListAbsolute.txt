@@ -119,3 +119,4 @@ C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan 
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.CopyComplete
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.pdb
+C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.GamePlatform.resources

@@ -46,9 +46,10 @@ namespace Plan_B
             this.label1.Font = new System.Drawing.Font("Minecraft Evenings", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.SeaShell;
-            this.label1.Location = new System.Drawing.Point(173, 9);
+            this.label1.Location = new System.Drawing.Point(420, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 57);
+            this.label1.Size = new System.Drawing.Size(697, 156);
             this.label1.TabIndex = 0;
             this.label1.Text = "Top 10";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,9 +58,10 @@ namespace Plan_B
             // 
             this.btnReturn.Font = new System.Drawing.Font("Minecraft Evenings", 14.25F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnReturn.Location = new System.Drawing.Point(12, 407);
+            this.btnReturn.Location = new System.Drawing.Point(29, 1112);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(115, 50);
+            this.btnReturn.Size = new System.Drawing.Size(279, 136);
             this.btnReturn.TabIndex = 1;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -69,18 +71,20 @@ namespace Plan_B
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 172);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(582, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(1413, 924);
             this.dataGridView1.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Minecraft Evenings", 14.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(227, 407);
+            this.button1.Location = new System.Drawing.Point(551, 1112);
+            this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 50);
+            this.button1.Size = new System.Drawing.Size(398, 136);
             this.button1.TabIndex = 3;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
@@ -88,16 +92,17 @@ namespace Plan_B
             // 
             // Scoreboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(607, 468);
+            this.ClientSize = new System.Drawing.Size(1474, 1279);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(623, 507);
+            this.MinimumSize = new System.Drawing.Size(1467, 1233);
             this.Name = "Scoreboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scoreboard";

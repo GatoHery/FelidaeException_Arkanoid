@@ -6,6 +6,7 @@ namespace Plan_B
 {
     public partial class Game : Form
     {
+        
         int playerSped;
         int ballx;
         int bally;

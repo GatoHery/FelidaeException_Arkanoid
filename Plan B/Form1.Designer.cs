@@ -40,9 +40,10 @@
             // 
             this.btnPlay.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnPlay.Location = new System.Drawing.Point(260, 213);
+            this.btnPlay.Location = new System.Drawing.Point(631, 582);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(190, 57);
+            this.btnPlay.Size = new System.Drawing.Size(461, 156);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Play!";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             this.btnScoreboard.Font = new System.Drawing.Font("Minecraft Evenings", 18F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnScoreboard.Location = new System.Drawing.Point(248, 302);
+            this.btnScoreboard.Location = new System.Drawing.Point(602, 825);
+            this.btnScoreboard.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnScoreboard.Name = "btnScoreboard";
-            this.btnScoreboard.Size = new System.Drawing.Size(211, 51);
+            this.btnScoreboard.Size = new System.Drawing.Size(512, 139);
             this.btnScoreboard.TabIndex = 1;
             this.btnScoreboard.Text = "Scoreboard";
             this.btnScoreboard.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnExit.Location = new System.Drawing.Point(260, 380);
+            this.btnExit.Location = new System.Drawing.Point(631, 1038);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(190, 57);
+            this.btnExit.Size = new System.Drawing.Size(461, 156);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -74,15 +77,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(710, 486);
+            this.ClientSize = new System.Drawing.Size(1724, 1328);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnScoreboard);
             this.Controls.Add(this.btnPlay);
+            this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(726, 525);
+            this.MinimumSize = new System.Drawing.Size(1717, 1282);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
