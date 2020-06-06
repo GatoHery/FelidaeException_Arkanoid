@@ -5,10 +5,10 @@ namespace Plan_B
 {
     public class ConnectionDB
     {
-        private static string host = "127.0.0.1",
-            database = "Felidae",
+        private static string host = "Localhost",
+            database = "ProyectoFinal",
             UserId = "postgres",
-            password = "gato";
+            password = "natalia.99";
 
         private static string sConnection =
             $"Server={host};Port=5432;User Id={UserId};Password={password};Database={database};";
