@@ -19,7 +19,7 @@ namespace Plan_B
 
         private void GamePlatform_Load(object sender, EventArgs e)
         {
-            picPaddle.BackgroundImage = Image.FromFile("../../Textures/Player.png");
+            picPaddle.BackgroundImage = Image.FromFile("../../Textures/Player.jpg");
             picPaddle.BackgroundImageLayout = ImageLayout.Stretch;
 
             picPaddle.Top = Height - picPaddle.Height - 80;
@@ -77,7 +77,7 @@ namespace Plan_B
                     cpb[i, j].Top = i * PlatFormHeight;
 
                     //If the value from i = 0, then put on the route from the brick pictureBox
-                    cpb[i, j].BackgroundImage = Image.FromFile("../../Textures" + GRN() + ".png");
+                    cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/" + GRN() + ".png");
                     cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
 
                     cpb[i, j].Tag = "tileTag";
