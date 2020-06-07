@@ -21,6 +21,7 @@ namespace Plan_B
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             var dt = ConnectionDB.ExecuteQuery("SELECT pl.name, sc.score " + 
             "FROM PLAYER pl, SCOREBOARD sc " +
             "WHERE pl.idscore = sc.idscore order by sc.score desc " +

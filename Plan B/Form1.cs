@@ -33,17 +33,26 @@ namespace Plan_B
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-             DialogResult result = MessageBox.Show("Do you want to exit to the game?", 
-            "Exit Button", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            try
+            {
+                DialogResult result = MessageBox.Show("Do you want to exit to the game?", 
+                    "Exit Button", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     
-         if(result == DialogResult.Yes)
-         {
-           this.Close();
-         }
-         else
-         {
-            //No se hace nada 
-         }
+                if(result == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    //No se hace nada 
+                }
+
+            }
+            catch (Exception exceptionExit)
+            {
+                MessageBox.Show("An error has ocurred");
+            }
+             
         }
     }
 }

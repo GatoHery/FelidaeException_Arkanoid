@@ -38,6 +38,7 @@ namespace Plan_B
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,12 +104,26 @@ namespace Plan_B
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnReturn.Location = new System.Drawing.Point(194, 714);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(262, 126);
+            this.btnReturn.TabIndex = 4;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1518, 1419);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -131,5 +146,6 @@ namespace Plan_B
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

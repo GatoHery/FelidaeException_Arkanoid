@@ -53,18 +53,15 @@ namespace Plan_B
 
             for (int i = 0; i < yAxis; i++)
             {
-                for (int j = 0; j < xAxis; i++)
+                for (int j = 0; j < xAxis; j++)
                 {
                     cpb[i, j] = new CustomPictureBox();
 
                     if (i == 0)
-                    {
                         cpb[i, j].Golpes = 2;
-                    }
                     else
-                    {
                         cpb[i, j].Golpes = 1;
-                    }
+                    
 
                     //Position from Height, Position from Width
                     cpb[i, j].Height = PlatFormHeight;
