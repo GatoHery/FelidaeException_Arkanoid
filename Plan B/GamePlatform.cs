@@ -9,6 +9,7 @@ namespace Plan_B
         private CustomPictureBox[,] cpb;
         private PictureBox ball;
         
+        //The function initializa the height and the width from the game
         public GamePlatform()
         {
             InitializeComponent();
@@ -17,6 +18,7 @@ namespace Plan_B
             WindowState = FormWindowState.Maximized;
         }
 
+        //This function permits the load of the game in the designer platform
         private void GamePlatform_Load(object sender, EventArgs e)
         {
             try
@@ -49,6 +51,8 @@ namespace Plan_B
 
         }
 
+        
+        //This function, permits fill the platform with bricks, and pick the photos from code
 
         private void LoadTiles()
         {
@@ -103,11 +107,13 @@ namespace Plan_B
             
         }
 
+        //Random functions that permits show bricks from multiple colors randomly
         private int GRN()
         {
             return new Random().Next(1, 8);
         }
         
+        //Permits the use of touchpad as the movement of the platform ball and paddle
         private void GamePlatform_MouseMove(object sender, MouseEventArgs e)
         {
             try
@@ -135,6 +141,7 @@ namespace Plan_B
             
         }
 
+        //Function work for player still play until it lose
         private void GamePlatformTimer_Tick_Tick(object sender, EventArgs e)
         {
             try
@@ -158,6 +165,7 @@ namespace Plan_B
         }
         
         
+        //KeyDown function is used to allow the start of the game
         private void GamePlatform_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
@@ -165,6 +173,7 @@ namespace Plan_B
 
         }
 
+        //Function provides ball bounds inside platform
         private void rebotarPelota()
         {
             try

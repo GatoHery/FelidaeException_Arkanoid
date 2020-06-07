@@ -11,6 +11,8 @@ namespace Plan_B
         {
             InitializeComponent();
         }
+        
+        //This function is a button that shows the Top 10
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -29,6 +31,8 @@ namespace Plan_B
             }
             
         }
+        
+        //If the player wants to return to main menu
         private void btnReturn_Click(object sender, EventArgs e)
         {
             Form1 Menu = new Form1();

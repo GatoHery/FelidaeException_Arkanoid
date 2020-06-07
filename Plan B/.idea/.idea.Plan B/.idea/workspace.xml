@@ -68,17 +68,17 @@
         <option value="$PROJECT_DIR$/Scoreboard.Designer.cs" />
         <option value="$PROJECT_DIR$/ConecctionDB.cs" />
         <option value="$PROJECT_DIR$/Game.Designer.cs" />
-        <option value="$PROJECT_DIR$/ConnectionDB.cs" />
         <option value="$PROJECT_DIR$/DatosJuegos.cs" />
-        <option value="$PROJECT_DIR$/DatosJuego.cs" />
-        <option value="$PROJECT_DIR$/CustomPictureBox.cs" />
         <option value="$PROJECT_DIR$/GamePlatform.Designer.cs" />
         <option value="$PROJECT_DIR$/Game.cs" />
-        <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/User.Designer.cs" />
-        <option value="$PROJECT_DIR$/User.cs" />
-        <option value="$PROJECT_DIR$/Scoreboard.cs" />
         <option value="$PROJECT_DIR$/GamePlatform.cs" />
+        <option value="$PROJECT_DIR$/User.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
+        <option value="$PROJECT_DIR$/Scoreboard.cs" />
+        <option value="$PROJECT_DIR$/CustomPictureBox.cs" />
+        <option value="$PROJECT_DIR$/DatosJuego.cs" />
+        <option value="$PROJECT_DIR$/ConnectionDB.cs" />
       </list>
     </option>
   </component>
@@ -147,7 +147,7 @@
       <workItem from="1591473162797" duration="740000" />
       <workItem from="1591478741771" duration="8169000" />
       <workItem from="1591552779167" duration="1892000" />
-      <workItem from="1591554850176" duration="1080000" />
+      <workItem from="1591554850176" duration="3822000" />
     </task>
     <servers />
   </component>

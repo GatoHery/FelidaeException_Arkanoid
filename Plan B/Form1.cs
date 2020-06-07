@@ -17,6 +17,7 @@ namespace Plan_B
             InitializeComponent();
         }
 
+        //The funtion allow the entrance to a new window to register a new player
         private void btnPlay_Click(object sender, EventArgs e)
         {
             User User = new User();
@@ -24,6 +25,7 @@ namespace Plan_B
             this.Hide();
         }
 
+        //This function shows a window with the scores
         private void btnScoreboard_Click(object sender, EventArgs e)
         {
             Scoreboard Score = new Scoreboard();
@@ -31,6 +33,7 @@ namespace Plan_B
             this.Hide();
         }
 
+        //The button, show the selected Window to exit... 
         private void btnExit_Click(object sender, EventArgs e)
         {
             try

@@ -56,6 +56,7 @@ namespace Plan_B
         
 
 
+        //Function let the entrance to game, Also verify the users already created
         private void btnSend_Click(object sender, EventArgs e)
         {
             try
@@ -106,6 +107,7 @@ namespace Plan_B
             
         }
 
+        //If the player didn't want to continue with the game he can return to main menu
         private void btnReturn_Click(object sender, EventArgs e)
         {
             Form1 Menu = new Form1();
