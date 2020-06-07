@@ -73,9 +73,9 @@ namespace Plan_B
                         cpb[i, j] = new CustomPictureBox();
 
                         if (i == 0)
-                            cpb[i, j].Golpes = 2;
+                            cpb[i, j].Hits = 2;
                         else
-                            cpb[i, j].Golpes = 1;
+                            cpb[i, j].Hits = 1;
                     
 
                         //Position from Height, Position from Width
@@ -118,7 +118,7 @@ namespace Plan_B
         {
             try
             {
-                if (!DatosJuego.juegoIniciado)
+                if (!GameData.GameStarted)
                 {
                     if (e.X < (Width - picPaddle.Width))
                     {
@@ -146,13 +146,13 @@ namespace Plan_B
         {
             try
             {
-                if (!DatosJuego.juegoIniciado)
+                if (!GameData.GameStarted)
                 {
                     return;
                 }
 
-                ball.Left += DatosJuego.dirX;
-                ball.Top += DatosJuego.dirY;
+                ball.Left += GameData.dirX;
+                ball.Top += GameData.dirY;
 
                 rebotarPelota();
 
@@ -169,7 +169,7 @@ namespace Plan_B
         private void GamePlatform_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
-                DatosJuego.juegoIniciado = true;
+                GameData.GameStarted = true;
 
         }
 
@@ -183,13 +183,13 @@ namespace Plan_B
 
                 if (ball.Left < 0 || ball.Right > Width)
                 {
-                    DatosJuego.dirX = -DatosJuego.dirX;
+                    GameData.dirX = -GameData.dirX;
                     return;
                 }
 
                 if (ball.Bounds.IntersectsWith(picPaddle.Bounds))
                 {
-                    DatosJuego.dirY = -DatosJuego.dirY;
+                    GameData.dirY = -GameData.dirY;
                 }
 
                 for (int i = 4; i >= 0; i--)
@@ -199,14 +199,14 @@ namespace Plan_B
                     {
                         if (ball.Bounds.IntersectsWith(cpb[i,j].Bounds))
                         {
-                            cpb[i, j].Golpes--;
+                            cpb[i, j].Hits--;
 
-                            if (cpb[i,j].Golpes == 0)
+                            if (cpb[i,j].Hits == 0)
                             {
                                 Controls.Remove(cpb[i,j]);
                             }
 
-                            DatosJuego.dirY = -DatosJuego.dirY;
+                            GameData.dirY = -GameData.dirY;
                         
                             return;
                         }
