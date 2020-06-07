@@ -104,7 +104,7 @@ namespace Plan_B
             this.MinimumSize = new System.Drawing.Size(1511, 1372);
             this.Name = "User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User";
+            this.Text = "Felidae Arkanoid Exception";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
