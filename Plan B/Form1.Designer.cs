@@ -89,7 +89,7 @@
             this.MinimumSize = new System.Drawing.Size(1717, 1282);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Felidae Arkanoid Exception";
             this.ResumeLayout(false);
         }
 

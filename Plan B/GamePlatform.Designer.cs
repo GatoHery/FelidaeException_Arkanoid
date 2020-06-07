@@ -57,7 +57,7 @@ namespace Plan_B
             this.Controls.Add(this.picPaddle);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GamePlatform";
-            this.Text = "GamePlatform";
+            this.Text = "Felidae Arkanoid Exception";
             this.Load += new System.EventHandler(this.GamePlatform_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GamePlatform_KeyDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GamePlatform_MouseMove);

@@ -105,7 +105,7 @@ namespace Plan_B
             this.MinimumSize = new System.Drawing.Size(1467, 1233);
             this.Name = "Scoreboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Scoreboard";
+            this.Text = "Felidae Arkanoid Exception";
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
         }
