@@ -35,8 +35,6 @@ namespace Plan_B
                 new System.ComponentModel.ComponentResourceManager(typeof(User));
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -58,38 +56,12 @@ namespace Plan_B
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Location = new System.Drawing.Point(568, 303);
+            this.txtName.Location = new System.Drawing.Point(579, 533);
             this.txtName.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(657, 47);
             this.txtName.TabIndex = 0;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(194, 284);
-            this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 95);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button2.Location = new System.Drawing.Point(51, 1222);
-            this.button2.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(262, 126);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Return";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnSend
             // 
@@ -108,7 +80,7 @@ namespace Plan_B
             // 
             this.btnReturn.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnReturn.Location = new System.Drawing.Point(194, 714);
+            this.btnReturn.Location = new System.Drawing.Point(172, 692);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(262, 126);
@@ -125,8 +97,6 @@ namespace Plan_B
             this.ClientSize = new System.Drawing.Size(1518, 1419);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
@@ -142,9 +112,7 @@ namespace Plan_B
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Button btnReturn;
     }

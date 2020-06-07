@@ -36,7 +36,7 @@ namespace Plan_B
             this.label1 = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,18 +77,18 @@ namespace Plan_B
             this.dataGridView1.Size = new System.Drawing.Size(1413, 924);
             this.dataGridView1.TabIndex = 2;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Font = new System.Drawing.Font("Minecraft Evenings", 14.25F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(551, 1112);
-            this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(398, 136);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnUpdate.Font = new System.Drawing.Font("Minecraft Evenings", 14.25F,
+                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnUpdate.Location = new System.Drawing.Point(525, 1112);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(398, 136);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Scoreboard
             // 
@@ -96,7 +96,7 @@ namespace Plan_B
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1474, 1279);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label1);
@@ -115,6 +115,6 @@ namespace Plan_B
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

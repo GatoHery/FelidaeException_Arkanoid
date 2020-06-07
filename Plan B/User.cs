@@ -51,16 +51,11 @@ namespace Plan_B
                 }
             }
             
-        }
+        }*/
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form1 Menu = new Form1();
-            Menu.Show();
-            this.Close();
-        }
+        
 
-*/
+
         private void btnSend_Click(object sender, EventArgs e)
         {
             try
