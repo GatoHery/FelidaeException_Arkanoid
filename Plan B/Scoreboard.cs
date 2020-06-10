@@ -10,6 +10,9 @@ namespace Plan_B
         public Scoreboard()
         {
             InitializeComponent();
+            Height = ClientSize.Height;
+            Width = ClientSize.Width;
+            WindowState = FormWindowState.Maximized;
         }
         
         //This function is a button that shows the Top 10

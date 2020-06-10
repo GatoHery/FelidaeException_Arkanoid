@@ -8,6 +8,9 @@ namespace Plan_B
     {
         private CustomPictureBox[,] cpb;
         private PictureBox ball;
+        int score = 0;
+        bool l;
+        bool r;
         
         //The function initializa the height and the width from the game
         public GamePlatform()
@@ -16,7 +19,21 @@ namespace Plan_B
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
+            setting();
         }
+        private void setting()
+        {
+            score = 0;
+            label1.Text = "Score: " + score;
+            GamePlatformTimer_Tick.Start();
+           
+        }
+        private void gameOver()
+        {
+            GamePlatformTimer_Tick.Stop();
+            label1.Text = score.ToString();
+        }
+
 
         //This function permits the load of the game in the designer platform
         private void GamePlatform_Load(object sender, EventArgs e)
@@ -60,11 +77,13 @@ namespace Plan_B
             {
                 int xAxis = 10;
                 int yAxis = 5;
+           
 
-                int PlatFormHeight = (int) (Height * 0.3) / yAxis;
+                int PlatFormHeight = (int)(Height * 0.3) / yAxis;
                 int PlatFormWidth = (Width - (xAxis - 5)) / xAxis;
             
                 cpb = new CustomPictureBox[yAxis, xAxis];
+                
 
                 for (int i = 0; i < yAxis; i++)
                 {
@@ -103,6 +122,7 @@ namespace Plan_B
             catch (Exception exceptionGameOver)
             {
                 MessageBox.Show("The game has end");
+                gameOver();
             }
             
         }
@@ -131,6 +151,7 @@ namespace Plan_B
                     if (e.X < (Width - picPaddle.Width))
                         picPaddle.Left = e.X;
                 }
+                
 
             }
             catch (Exception exceptionMouseMovement)
@@ -144,6 +165,7 @@ namespace Plan_B
         //Function work for player still play until it lose
         private void GamePlatformTimer_Tick_Tick(object sender, EventArgs e)
         {
+            label1.Text = score.ToString();
             try
             {
                 if (!GameData.GameStarted)
@@ -165,12 +187,44 @@ namespace Plan_B
         }
         
         
-        //KeyDown function is used to allow the start of the game
+        //The KeyDown function is used to allow the start of the game as well as the handling of keys
         private void GamePlatform_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
                 GameData.GameStarted = true;
-
+            
+            if (!GameData.GameStarted)
+            {
+                if (e.KeyValue < (Width - picPaddle.Width))
+                {
+                    picPaddle.Left = e.KeyValue;
+                    ball.Left = picPaddle.Left + (picPaddle.Width / 2) - (ball.Width / 2);
+                }
+            }
+            else
+            {
+                if (e.KeyValue < (Width - picPaddle.Width))
+                    picPaddle.Left = e.KeyValue;
+            }
+           
+        }
+        //The KeyUp function is used for key handling
+        private void Game_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!GameData.GameStarted)
+            {
+                if (e.KeyValue < (Width - picPaddle.Width))
+                {
+                    picPaddle.Left = e.KeyValue;
+                    ball.Left = picPaddle.Left + (picPaddle.Width / 2) - (ball.Width / 2);
+                }
+            }
+            else
+            {
+                if (e.KeyValue < (Width - picPaddle.Width))
+                    picPaddle.Left = e.KeyValue;
+            }
+            
         }
 
         //Function provides ball bounds inside platform
@@ -179,7 +233,9 @@ namespace Plan_B
             try
             {
                 if(ball.Bottom > Height)
+                {
                     Application.Exit();
+                }
 
                 if (ball.Left < 0 || ball.Right > Width)
                 {
@@ -203,17 +259,15 @@ namespace Plan_B
 
                             if (cpb[i,j].Hits == 0)
                             {
+                                score += 1;
                                 Controls.Remove(cpb[i,j]);
                             }
-
                             GameData.dirY = -GameData.dirY;
                         
                             return;
                         }
                     }
-                
                 }
-
             }
             catch (Exception exceptionBallBounds)
             {
@@ -222,5 +276,7 @@ namespace Plan_B
             
             
         }
+
+      
     }
 }

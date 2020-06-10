@@ -15,6 +15,9 @@ namespace Plan_B
         public Form1()
         {
             InitializeComponent();
+            Height = MaximumSize.Height;
+            Width = MaximumSize.Width;
+            WindowState = FormWindowState.Maximized;
         }
 
         //The funtion allow the entrance to a new window to register a new player
@@ -57,5 +60,7 @@ namespace Plan_B
             }
              
         }
+
+       
     }
 }

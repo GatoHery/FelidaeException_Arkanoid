@@ -38,12 +38,14 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPlay.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnPlay.Location = new System.Drawing.Point(631, 582);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnPlay.Location = new System.Drawing.Point(195, 193);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(461, 156);
+            this.btnPlay.Size = new System.Drawing.Size(190, 57);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Play!";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -51,12 +53,14 @@
             // 
             // btnScoreboard
             // 
+            this.btnScoreboard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnScoreboard.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnScoreboard.Font = new System.Drawing.Font("Minecraft Evenings", 18F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnScoreboard.Location = new System.Drawing.Point(602, 825);
-            this.btnScoreboard.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnScoreboard.Location = new System.Drawing.Point(185, 283);
+            this.btnScoreboard.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnScoreboard.Name = "btnScoreboard";
-            this.btnScoreboard.Size = new System.Drawing.Size(512, 139);
+            this.btnScoreboard.Size = new System.Drawing.Size(211, 51);
             this.btnScoreboard.TabIndex = 1;
             this.btnScoreboard.Text = "Scoreboard";
             this.btnScoreboard.UseVisualStyleBackColor = true;
@@ -64,12 +68,14 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExit.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnExit.Location = new System.Drawing.Point(631, 1038);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnExit.Location = new System.Drawing.Point(195, 381);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(461, 156);
+            this.btnExit.Size = new System.Drawing.Size(190, 57);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -77,16 +83,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1724, 1328);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(572, 470);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnScoreboard);
             this.Controls.Add(this.btnPlay);
-            this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1717, 1282);
+            this.MinimumSize = new System.Drawing.Size(571, 291);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Felidae Arkanoid Exception";

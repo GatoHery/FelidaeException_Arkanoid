@@ -120,3 +120,39 @@ C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan 
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.pdb
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.GamePlatform.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Plan_B.exe.config
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Plan_B.exe
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Plan_B.pdb
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Npgsql.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Buffers.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Memory.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Text.Json.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.ValueTuple.dll
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Npgsql.pdb
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\Npgsql.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Buffers.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Memory.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Text.Json.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\bin\Debug\System.ValueTuple.xml
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csprojAssemblyReference.cache
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe.config
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Form1.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.GamePlatform.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Properties.Resources.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Scoreboard.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.User.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.GenerateResource.cache
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.CoreCompileInputs.cache
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.CopyComplete
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.pdb
