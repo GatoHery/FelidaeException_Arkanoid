@@ -4,18 +4,24 @@ using System.Windows.Forms;
 
 namespace Plan_B
 {
-    public partial class User : Form
+    public partial class UserRegister : UserControl
     {
         private bool Continue = true;
-        public User()
+        public delegate void EventUsuerControlUserRegister(object sender, EventArgs e);
+        public EventUsuerControlUserRegister OnClickButtonReturn;
+        public UserRegister()
         {
             InitializeComponent();
-            Height = ClientSize.Height;
-            Width = ClientSize.Width;
-            WindowState = FormWindowState.Maximized;
         }
 
-        //Function let the entrance to game, Also verify the users already created
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            if (OnClickButtonReturn != null)
+            {
+                OnClickButtonReturn(this, e);
+            }
+        }
+
         private void btnSend_Click(object sender, EventArgs e)
         {
             try
@@ -53,7 +59,6 @@ namespace Plan_B
                         
                         GamePlatform game = new GamePlatform();
                         game.Show();
-                        this.Close();
                     }
                 }
 
@@ -62,15 +67,7 @@ namespace Plan_B
             {
                 MessageBox.Show("An error has ocurred :(");
             }
-            
-        }
 
-        //If the player didn't want to continue with the game he can return to main menu
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            Form1 Menu = new Form1();
-            Menu.Show();
-            this.Close();
         }
     }
 }

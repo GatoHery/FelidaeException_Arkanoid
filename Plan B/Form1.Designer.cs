@@ -31,55 +31,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources =
                 new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnScoreboard = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnPlay
+            // tableLayoutPanel1
             // 
-            this.btnPlay.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPlay.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(111, 166);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1163, 560);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnPlay.Location = new System.Drawing.Point(195, 193);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(190, 57);
-            this.btnPlay.TabIndex = 0;
-            this.btnPlay.Text = "Play!";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // btnScoreboard
-            // 
-            this.btnScoreboard.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnScoreboard.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnScoreboard.Font = new System.Drawing.Font("Minecraft Evenings", 18F,
-                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnScoreboard.Location = new System.Drawing.Point(185, 283);
-            this.btnScoreboard.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnScoreboard.Name = "btnScoreboard";
-            this.btnScoreboard.Size = new System.Drawing.Size(211, 51);
-            this.btnScoreboard.TabIndex = 1;
-            this.btnScoreboard.Text = "Scoreboard";
-            this.btnScoreboard.UseVisualStyleBackColor = true;
-            this.btnScoreboard.Click += new System.EventHandler(this.btnScoreboard_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnExit.Font = new System.Drawing.Font("Minecraft Evenings", 18F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnExit.Location = new System.Drawing.Point(195, 381);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(190, 57);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.button1.Location = new System.Drawing.Point(1, 450);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 58);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Main Menu ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -88,23 +69,22 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(572, 470);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnScoreboard);
-            this.Controls.Add(this.btnPlay);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(571, 291);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Felidae Arkanoid Exception";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnScoreboard;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button button1;
     }
 }

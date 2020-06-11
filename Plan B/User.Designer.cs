@@ -116,11 +116,11 @@ namespace Plan_B
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.Button btnSend;
+        #endregion
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtName;
-
-        #endregion
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

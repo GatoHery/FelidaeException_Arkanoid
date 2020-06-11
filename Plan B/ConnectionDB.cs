@@ -6,14 +6,14 @@ namespace Plan_B
     public class ConnectionDB
     {
         //This functions is a chain that is used to connect with the data base
-        private static string host = "127.0.0.1",
-            database = "FinalProject",
-            userId = "postgres",
-            password = "Alexito";
+        private static string host = "Localhost",
+            database = "Felidae",
+            UserId = "postgres",
+            password = "gato";
 
-        //This function connects to the database
+        //Function to connect the data base
         private static string sConnection =
-            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
+            $"Server={host};Port=5432;User Id={UserId};Password={password};Database={database};";
 
         //Function that realize changes in the game
         public static DataTable ExecuteQuery(string query)

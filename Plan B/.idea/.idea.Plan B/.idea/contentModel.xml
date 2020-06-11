@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\marvi\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\marvi\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Plan B.16512457.00" t="ExcludeRecursive" />
-    <e p="C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B" t="IncludeRecursive">
+    <e p="C:\Users\MAX\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\MAX\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\MAX\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\MAX\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Plan B.386972175.00" t="ExcludeRecursive" />
+    <e p="C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConnectionDB.cs" t="Include" />
@@ -15,6 +17,9 @@
       <e p="GamePlatform.cs" t="Include" />
       <e p="GamePlatform.Designer.cs" t="Include" />
       <e p="GamePlatform.resx" t="Include" />
+      <e p="Menu.cs" t="Include" />
+      <e p="Menu.Designer.cs" t="Include" />
+      <e p="Menu.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="packages.config" t="Include" />
@@ -31,13 +36,18 @@
       <e p="Scoreboard.cs" t="Include" />
       <e p="Scoreboard.Designer.cs" t="Include" />
       <e p="Scoreboard.resx" t="Include" />
-      <e p="ScoreIncrease.cs" t="Include" />
       <e p="Sprites" t="Include">
         <e p="Heart - Empty.png" t="Include" />
       </e>
+      <e p="Top10.cs" t="Include" />
+      <e p="Top10.Designer.cs" t="Include" />
+      <e p="Top10.resx" t="Include" />
       <e p="User.cs" t="Include" />
       <e p="User.Designer.cs" t="Include" />
       <e p="User.resx" t="Include" />
+      <e p="UserRegister.cs" t="Include" />
+      <e p="UserRegister.Designer.cs" t="Include" />
+      <e p="UserRegister.resx" t="Include" />
     </e>
   </component>
 </project>

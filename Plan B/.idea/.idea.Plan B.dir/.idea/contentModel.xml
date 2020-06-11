@@ -5,16 +5,21 @@
     <e p="C:\Users\MAX\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\MAX\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\MAX\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="C:\Users\MAX\Documents\GitHub\Plan_B\Plan B" t="IncludeRecursive">
+    <e p="C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConnectionDB.cs" t="Include" />
+      <e p="CustomPictureBox.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />
-      <e p="Game.cs" t="Include" />
-      <e p="Game.Designer.cs" t="Include" />
-      <e p="Game.resx" t="Include" />
+      <e p="GameData.cs" t="Include" />
+      <e p="GamePlatform.cs" t="Include" />
+      <e p="GamePlatform.Designer.cs" t="Include" />
+      <e p="GamePlatform.resx" t="Include" />
+      <e p="Menu.cs" t="Include" />
+      <e p="Menu.Designer.cs" t="Include" />
+      <e p="Menu.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="packages.config" t="Include" />
@@ -33,9 +38,15 @@
       <e p="Sprites" t="Include">
         <e p="Heart - Empty.png" t="Include" />
       </e>
+      <e p="Top10.cs" t="Include" />
+      <e p="Top10.Designer.cs" t="Include" />
+      <e p="Top10.resx" t="Include" />
       <e p="User.cs" t="Include" />
       <e p="User.Designer.cs" t="Include" />
       <e p="User.resx" t="Include" />
+      <e p="UserRegister.cs" t="Include" />
+      <e p="UserRegister.Designer.cs" t="Include" />
+      <e p="UserRegister.resx" t="Include" />
     </e>
   </component>
 </project>
