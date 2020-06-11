@@ -118,11 +118,11 @@ namespace Plan_B
             this.ResumeLayout(false);
         }
 
-        #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+
+        #endregion
     }
 }

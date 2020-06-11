@@ -85,7 +85,7 @@ namespace Plan_B
             this.btnReturn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnReturn.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnReturn.Location = new System.Drawing.Point(11, 410);
+            this.btnReturn.Location = new System.Drawing.Point(10, 410);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(107, 46);
@@ -116,11 +116,11 @@ namespace Plan_B
             this.PerformLayout();
         }
 
-        #endregion
-
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.Button btnReturn;
+
+        #endregion
     }
 }

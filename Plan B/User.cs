@@ -24,7 +24,7 @@ namespace Plan_B
             
                 if(name.Length == 0)
                 {
-                    MessageBox.Show("you did not enter the name!", "Name Empty",
+                    MessageBox.Show("You did not enter the name!", "Name Empty",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
