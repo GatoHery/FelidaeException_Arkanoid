@@ -28,21 +28,9 @@ namespace Plan_B
             top = new Top10();
             user = new UserRegister();
             current = menu;
-            tableLayoutPanel1.Controls.Add(current);
-        }
-
-        //This function shows a window with the scores
-        private void btnScoreboard_Click(object sender, EventArgs e)
-        {
-            Scoreboard Score = new Scoreboard();
-            Score.Show();
-            this.Hide();
-        }
-
-        
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+            current.Location = new Point(160,190);
+            
+            Controls.Add(current);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,16 +46,18 @@ namespace Plan_B
 
         private void OnClickToUseButtonPlay(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new UserRegister();
-            tableLayoutPanel1.Controls.Add(current);
+            current.Hide();
+            current = user;
+            current.Location = new Point(160,190);
+            Controls.Add(current);
         }
         
         private void OnClickToUseButtonTop10(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new Top10();
-            tableLayoutPanel1.Controls.Add(current);
+            current.Hide();
+            current = top;
+            current.Location = new Point(160,190);
+            Controls.Add(current);
         }
         
         //The button, show the selected Window to exit... 
@@ -96,23 +86,20 @@ namespace Plan_B
         
         private void OnClickToUseButtonTopReturn(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new Menu();
-            tableLayoutPanel1.Controls.Add(current);
+            Controls.Remove(current);
+            current = menu;
+            current.Show();
+            current.Location = new Point(160,190);
+            Controls.Add(current);
         }
         
         private void OnClickToUseButtonUserReturn(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new Menu();
-            tableLayoutPanel1.Controls.Add(current);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new Menu();
-            tableLayoutPanel1.Controls.Add(current);
+            Controls.Remove(current);
+            current = menu;
+            current.Show();
+            current.Location = new Point(160,190);
+            Controls.Add(current);
         }
     }
 }
