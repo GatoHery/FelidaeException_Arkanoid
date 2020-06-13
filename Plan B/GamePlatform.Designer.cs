@@ -33,10 +33,10 @@ namespace Plan_B
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(GamePlatform));
             this.picPaddle = new System.Windows.Forms.PictureBox();
             this.GamePlatformTimer_Tick = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.picPaddle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,45 +53,20 @@ namespace Plan_B
             // 
             this.GamePlatformTimer_Tick.Tick += new System.EventHandler(this.GamePlatformTimer_Tick_Tick);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(719, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Minecraft Evenings", 12F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(649, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Score: ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // GamePlatform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(820, 393);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.picPaddle);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "GamePlatform";
             this.Text = "Felidae Arkanoid Exception";
             this.Load += new System.EventHandler(this.GamePlatform_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GamePlatform_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Game_KeyUp);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GamePlatform_MouseMove);
             ((System.ComponentModel.ISupportInitialize) (this.picPaddle)).EndInit();
             this.ResumeLayout(false);
@@ -101,7 +76,5 @@ namespace Plan_B
 
         private System.Windows.Forms.PictureBox picPaddle;
         private System.Windows.Forms.Timer GamePlatformTimer_Tick;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }

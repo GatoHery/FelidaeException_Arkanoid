@@ -7,9 +7,9 @@ namespace Plan_B
     {
         //This functions is a chain that is used to connect with the data base
         private static string host = "Localhost",
-            database = "Felidae",
+            database = "FinalProject",
             UserId = "postgres",
-            password = "gato";
+            password = "Alexito";
 
         //Function to connect the data base
         private static string sConnection =

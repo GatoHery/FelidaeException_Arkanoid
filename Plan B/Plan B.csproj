@@ -90,6 +90,7 @@
     <ItemGroup>
         <Compile Include="ConnectionDB.cs" />
         <Compile Include="CustomPictureBox.cs" />
+        <Compile Include="CustomPictureBox2.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -117,6 +118,7 @@
         <Compile Include="Scoreboard.Designer.cs">
           <DependentUpon>Scoreboard.cs</DependentUpon>
         </Compile>
+        <Compile Include="ScoreIncrease.cs" />
         <Compile Include="Top10.cs">
           <SubType>UserControl</SubType>
         </Compile>

@@ -152,7 +152,6 @@ C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Pro
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Scoreboard.resources
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.User.resources
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.GenerateResource.cache
-C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.CoreCompileInputs.cache
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csproj.CopyComplete
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.pdb
@@ -195,3 +194,6 @@ C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.
 C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Menu.resources
 C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.UserRegister.resources
 C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Top10.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Menu.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Top10.resources
+C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.UserRegister.resources
