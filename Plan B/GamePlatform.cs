@@ -234,7 +234,10 @@ namespace Plan_B
             {
                 if(ball.Bottom > Height)
                 {
-                    Application.Exit();
+                    GamePlatformTimer_Tick.Stop();
+                    MessageBox.Show("Game over");
+                    this.Close();
+                    
                 }
 
                 if (ball.Left < 0 || ball.Right > Width)

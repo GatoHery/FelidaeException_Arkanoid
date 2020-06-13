@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Plan_B
 {
@@ -45,6 +46,8 @@ namespace Plan_B
                         {
                             MessageBox.Show("The name already exist", "name repeated",
                                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            
+                            UserRegister user = new UserRegister();
 
                             Continue = false;
                             break;
