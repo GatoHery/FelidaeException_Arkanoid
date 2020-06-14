@@ -14,13 +14,13 @@ namespace Plan_B
             private string PlayerName;
             
             //The function initializa the height and the width from the game
-            public GamePlatform()
+            public GamePlatform(string Player)
             {
                 InitializeComponent();
                 Height = ClientSize.Height;
                 Width = ClientSize.Width;
                 WindowState = FormWindowState.Maximized;
-                //PlayerName = Player;
+                PlayerName = Player;
             }
             //This function permits the load of the game in the designer platform
             private void GamePlatform_Load(object sender, EventArgs e)
@@ -237,11 +237,9 @@ namespace Plan_B
                         //Application.Exit();
                         GamePlatformTimer_Tick.Stop();
                         MessageBox.Show("Game over");
+                        ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {ScoreIncrease.score} where name = '{PlayerName}'");
                         this.Close();
-
-                    ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {ScoreIncrease.score} where name = {PlayerName}");
-
-                }
+                    }
     
                     if (ball.Left < 0 || ball.Right > Width)
                     {

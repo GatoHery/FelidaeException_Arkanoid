@@ -16,12 +16,9 @@ namespace Plan_B
         {
             try
             {
-                var dt = ConnectionDB.ExecuteQuery("SELECT pl.name, sc.score " + 
-                                                   "FROM PLAYER pl, SCOREBOARD sc " +
-                                                   "WHERE pl.idscore = sc.idscore order by sc.score desc " +
-                                                   "LIMIT 10");
+                var dt = ConnectionDB.ExecuteQuery("SELECT * FROM PLAYER order by score desc LIMIT 10");
 
-                dataGridView1.DataSource = dt;
+                dgvScores.DataSource = dt;
 
             }
             catch (Exception exceptionUpdateScores)

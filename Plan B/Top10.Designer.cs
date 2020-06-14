@@ -33,10 +33,10 @@ namespace Plan_B
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Top10));
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvScores = new System.Windows.Forms.DataGridView();
             this.btnReturn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScores)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -53,17 +53,17 @@ namespace Plan_B
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // dataGridView1
+            // dgvScores
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(576, 169);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 102;
-            this.dataGridView1.Size = new System.Drawing.Size(1525, 746);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvScores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvScores.BackgroundColor = System.Drawing.Color.White;
+            this.dgvScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvScores.Location = new System.Drawing.Point(576, 169);
+            this.dgvScores.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.dgvScores.Name = "dgvScores";
+            this.dgvScores.RowHeadersWidth = 102;
+            this.dgvScores.Size = new System.Drawing.Size(1525, 746);
+            this.dgvScores.TabIndex = 8;
             // 
             // btnReturn
             // 
@@ -99,13 +99,13 @@ namespace Plan_B
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvScores);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "Top10";
             this.Size = new System.Drawing.Size(2658, 1157);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvScores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,7 +114,7 @@ namespace Plan_B
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvScores;
         private System.Windows.Forms.Button btnUpdate;
     }
 }

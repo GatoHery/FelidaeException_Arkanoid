@@ -21,8 +21,9 @@ namespace Plan_B
             try
             {
                 var name = txtName.Text;
-            
-                if(name.Length == 0)
+                var player = txtName.Text;
+
+                if (name.Length == 0)
                 {
                     MessageBox.Show("you did not enter the name!", "Name Empty",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -50,8 +51,9 @@ namespace Plan_B
                     {
                         ConnectionDB.ExecuteNonQuery("INSERT INTO PLAYER(Name) " +
                                                      $"VALUES('{txtName.Text}')");
-                        
-                        GamePlatform game = new GamePlatform();
+
+                        player = txtName.Text;
+                        GamePlatform game = new GamePlatform(player);
                         game.Show();
                         this.Close();
                     }

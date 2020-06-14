@@ -63,7 +63,7 @@ namespace Plan_B
 
 
                         player = txtName.Text;
-                        GamePlatform game = new GamePlatform();
+                        GamePlatform game = new GamePlatform(player);
                         game.Show();
                     }
                 }
