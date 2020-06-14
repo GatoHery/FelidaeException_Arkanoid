@@ -11,6 +11,7 @@ namespace Plan_B
             private PictureBox ball;
             private Label sco;
             private PictureBox hearts;
+            private string PlayerName;
             
             //The function initializa the height and the width from the game
             public GamePlatform()
@@ -19,6 +20,7 @@ namespace Plan_B
                 Height = ClientSize.Height;
                 Width = ClientSize.Width;
                 WindowState = FormWindowState.Maximized;
+                //PlayerName = Player;
             }
             //This function permits the load of the game in the designer platform
             private void GamePlatform_Load(object sender, EventArgs e)
@@ -43,7 +45,7 @@ namespace Plan_B
                     
                     //Setting attributes for Label sco
                     sco = new Label();
-                    sco.Top = Height - sco.Height - 720;
+                    sco.Top = Height - sco.Height - 800;
                     sco.Left = (Width) - (sco.Width);
                     sco.BackColor = Color.White;
                     
@@ -232,11 +234,14 @@ namespace Plan_B
                 {
                     if(ball.Bottom > Height)
                     {
-                        Application.Exit();
+                        //Application.Exit();
                         GamePlatformTimer_Tick.Stop();
                         MessageBox.Show("Game over");
                         this.Close();
-                    }
+
+                    ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {ScoreIncrease.score} where name = {PlayerName}");
+
+                }
     
                     if (ball.Left < 0 || ball.Right > Width)
                     {
@@ -261,7 +266,7 @@ namespace Plan_B
                                 if (cpb[i,j].Hits == 0)
                                 {
                                     //Calling the function to increase the score
-                                    ScoreIncrease.score++;
+                                    ScoreIncrease.score = ScoreIncrease.score + 150;
                                     Controls.Remove(cpb[i,j]);
                                     cpb[i, j] = null;
                                 }
@@ -271,11 +276,16 @@ namespace Plan_B
                             }
                         }
                     }
-                }
+
+                
+
+            }
                 catch (Exception exceptionBallBounds)
                 {
                     MessageBox.Show("An error has ocurred with the ball bounds");
                 }
             }
-        }
+
+       
+    }
 }

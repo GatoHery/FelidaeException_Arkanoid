@@ -28,6 +28,7 @@ namespace Plan_B
             try
             {
                 var name = txtName.Text;
+                var player = txtName.Text;
             
                 if(name.Length == 0)
                 {
@@ -59,7 +60,9 @@ namespace Plan_B
                     {
                         ConnectionDB.ExecuteNonQuery("INSERT INTO PLAYER(Name) " +
                                                      $"VALUES('{txtName.Text}')");
-                        
+
+
+                        player = txtName.Text;
                         GamePlatform game = new GamePlatform();
                         game.Show();
                     }

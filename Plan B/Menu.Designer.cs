@@ -31,66 +31,67 @@ namespace Plan_B
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnTop10 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPlay
             // 
-            this.button1.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(348, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(446, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Play!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPlay.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.Location = new System.Drawing.Point(795, 104);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(1019, 130);
+            this.btnPlay.TabIndex = 3;
+            this.btnPlay.Text = "Play!";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // button2
+            // btnTop10
             // 
-            this.button2.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button2.Location = new System.Drawing.Point(348, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(446, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Top 10";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnTop10.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTop10.Location = new System.Drawing.Point(795, 348);
+            this.btnTop10.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnTop10.Name = "btnTop10";
+            this.btnTop10.Size = new System.Drawing.Size(1019, 130);
+            this.btnTop10.TabIndex = 4;
+            this.btnTop10.Text = "Top 10";
+            this.btnTop10.UseVisualStyleBackColor = true;
+            this.btnTop10.Click += new System.EventHandler(this.btnTop10_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button3.Location = new System.Drawing.Point(348, 343);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(446, 63);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(795, 597);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(1019, 130);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnTop10);
+            this.Controls.Add(this.btnPlay);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "Menu";
-            this.Size = new System.Drawing.Size(1163, 560);
+            this.Size = new System.Drawing.Size(2658, 1157);
             this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnTop10;
+        private System.Windows.Forms.Button btnExit;
     }
 }

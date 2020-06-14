@@ -33,19 +33,18 @@ namespace Plan_B
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(GamePlatform));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePlatform));
             this.picPaddle = new System.Windows.Forms.PictureBox();
             this.GamePlatformTimer_Tick = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize) (this.picPaddle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaddle)).BeginInit();
             this.SuspendLayout();
             // 
             // picPaddle
             // 
-            this.picPaddle.Location = new System.Drawing.Point(212, 342);
-            this.picPaddle.Margin = new System.Windows.Forms.Padding(1);
+            this.picPaddle.Location = new System.Drawing.Point(485, 707);
+            this.picPaddle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPaddle.Name = "picPaddle";
-            this.picPaddle.Size = new System.Drawing.Size(99, 31);
+            this.picPaddle.Size = new System.Drawing.Size(226, 64);
             this.picPaddle.TabIndex = 0;
             this.picPaddle.TabStop = false;
             // 
@@ -55,21 +54,22 @@ namespace Plan_B
             // 
             // GamePlatform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(820, 393);
+            this.ClientSize = new System.Drawing.Size(1874, 812);
             this.Controls.Add(this.picPaddle);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GamePlatform";
             this.Text = "Felidae Arkanoid Exception";
             this.Load += new System.EventHandler(this.GamePlatform_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GamePlatform_KeyDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GamePlatform_MouseMove);
-            ((System.ComponentModel.ISupportInitialize) (this.picPaddle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaddle)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

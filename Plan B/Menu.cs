@@ -13,17 +13,19 @@ namespace Plan_B
         {
             InitializeComponent();
         }
-        
+
         //The funtion allow the entrance to a new window to register a new player
-        private void button1_Click(object sender, EventArgs e)
+      
+        private void btnPlay_Click(object sender, EventArgs e)
         {
             if (OnClickButtonPlay != null)
             {
                 OnClickButtonPlay(this, e);
             }
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnTop10_Click(object sender, EventArgs e)
         {
             if (OnClickButtonTop10 != null)
             {
@@ -31,7 +33,8 @@ namespace Plan_B
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        
+        private void btnExit_Click(object sender, EventArgs e)
         {
             if (OnClickButtonExit != null)
             {

@@ -110,7 +110,6 @@ C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\bin\Debug\Syste
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csprojAssemblyReference.cache
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe.config
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Form1.resources
-C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Game.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Properties.Resources.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Scoreboard.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.User.resources
@@ -197,3 +196,6 @@ C:\Users\MAX\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Menu.resources
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Top10.resources
 C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.UserRegister.resources
+C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Menu.resources
+C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Top10.resources
+C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.UserRegister.resources
