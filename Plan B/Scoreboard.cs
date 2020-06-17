@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Windows.Forms;
 
 namespace Plan_B
@@ -42,8 +40,6 @@ namespace Plan_B
             Menu.Show();
             this.Close();
         }
-
-       
         
     }
 }
