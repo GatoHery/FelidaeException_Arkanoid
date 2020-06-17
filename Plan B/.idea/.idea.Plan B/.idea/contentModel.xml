@@ -8,7 +8,6 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="ConnectionDB.cs" t="Include" />
       <e p="CustomPictureBox.cs" t="Include" />
-      <e p="CustomPictureBox2.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />

@@ -22,7 +22,7 @@ namespace Plan_B
                 WindowState = FormWindowState.Maximized;
                 PlayerName = Player;
             }
-            
+
             //This function permits the load of the game in the designer platform
             private void GamePlatform_Load(object sender, EventArgs e)
             {
@@ -80,35 +80,47 @@ namespace Plan_B
                                 cpb[i, j].Hits = 2;
                             else
                                 cpb[i, j].Hits = 1;
-    
-    
+                            
                             //Setting the size
                             cpb[i, j].Height = PlatFormHeight;
                             cpb[i, j].Width = PlatFormWidth;
-    
-    
-                            //Position from Left, Position from Top
-    
-                            cpb[i, j].Left = j * PlatFormWidth;
-                            cpb[i, j].Top = i * PlatFormHeight + score.Width;
-    
-                            //If the value from i = 0, then put on the route from the brick pictureBox
-                            cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/" + GRN() + ".png");
-                            cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
-    
-                            cpb[i, j].Tag = "tileTag";
-    
-                            Controls.Add(cpb[i, j]);
                             
+                            //Position from Left, Position from Top
+                            cpb[i, j].Left = j * PlatFormWidth;
+                            cpb[i, j].Top = i * PlatFormHeight + scorePanel.Height + 1;
+                            
+                            int imageBack = 0;
+
+                            if (i % 2 == 0 && j % 2 == 0)
+                                imageBack = 3;
+                            else if (i % 2 == 0 && j % 2 != 0)
+                                imageBack = 4;
+                            else if (i % 2 != 0 && j % 2 == 0)
+                                imageBack = 4;
+                            else
+                                imageBack = 3;
+
+                            if (i == 2)
+                            {
+                                cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/Tileblinded.png");
+                                cpb[i, j].Tag = "blinded";
+                            }
+                            else
+                            {
+                                cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/" + imageBack + ".png");
+                                cpb[i, j].Tag = "tileTag";
+                            }
+
+                            cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
+
+                            Controls.Add(cpb[i, j]);
                         }
                     }
-    
                 }
                 catch (Exception exceptionGameOver)
                 {
                     MessageBox.Show("The game has end");
                 }
-                
             }
     
             //Random functions that permits show bricks from multiple colors randomly
@@ -189,7 +201,7 @@ namespace Plan_B
                         repositionElements();
                         updateItems();
 
-                        GameData.GameStarted = true;
+                        GameData.GameStarted = false;
                         GamePlatformTimer_Tick.Start();
                         
                         if (GameData.lifes == 0)
@@ -229,6 +241,9 @@ namespace Plan_B
                                     Controls.Remove(cpb[i,j]);
                                     cpb[i, j] = null;
                                 }
+                                else if (cpb[i, j].Tag.Equals("blinded"))
+                                    cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/Tileblindedbroken.png");
+                                
                                 GameData.dirY = -GameData.dirY;
 
                                 score.Text = "Score: " + GameData.score;
