@@ -22,6 +22,16 @@ namespace Plan_B
                 WindowState = FormWindowState.Maximized;
                 PlayerName = Player;
             }
+            
+            protected override CreateParams CreateParams
+            {
+                get
+                {
+                    CreateParams handleParam = base.CreateParams;
+                    handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                    return handleParam;
+                }
+            }
 
             //This function permits the load of the game in the designer platform
             private void GamePlatform_Load(object sender, EventArgs e)
