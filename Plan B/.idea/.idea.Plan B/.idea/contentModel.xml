@@ -35,7 +35,6 @@
       <e p="Scoreboard.cs" t="Include" />
       <e p="Scoreboard.Designer.cs" t="Include" />
       <e p="Scoreboard.resx" t="Include" />
-      <e p="ScoreIncrease.cs" t="Include" />
       <e p="Sprites" t="Include">
         <e p="Heart - Empty.png" t="Include" />
       </e>

@@ -7,11 +7,11 @@ namespace Plan_B
     public partial class GamePlatform : Form
         {
             private CustomPictureBox[,] cpb;
-            private CustomPictureBox2[,] cpb2;
             private PictureBox ball;
             private Label sco;
-            private PictureBox hearts;
+            private PictureBox[] hearts;
             private string PlayerName;
+            private Panel score;
             
             //The function initializa the height and the width from the game
             public GamePlatform(string Player)
@@ -27,6 +27,7 @@ namespace Plan_B
             {
                 try
                 {
+                    PanelScore();
                     //Setting attributes for PictureBox player
                     picPaddle.BackgroundImage = Image.FromFile("../../Textures/Player.jpg");
                     picPaddle.BackgroundImageLayout = ImageLayout.Stretch;
@@ -43,17 +44,9 @@ namespace Plan_B
                     ball.Top = picPaddle.Top - ball.Height;
                     ball.Left = picPaddle.Left + (picPaddle.Width / 2) - (ball.Width / 2);
                     
-                    //Setting attributes for Label sco
-                    sco = new Label();
-                    sco.Top = Height - sco.Height - 800;
-                    sco.Left = (Width) - (sco.Width);
-                    sco.BackColor = Color.White;
-                    
                     Controls.Add(ball);
-                    Controls.Add(sco);
-                    
+
                     LoadTiles();
-                    LoadHearts();
                     GamePlatformTimer_Tick.Start();
     
                 }
@@ -63,48 +56,7 @@ namespace Plan_B
                 }
             }
     
-            private void LoadHearts()
-            {
-                try
-                {
-                    int ax = 3;
-                    int ay = 1;
-    
-                    int PlatformH = (int) (Height * 0.1) / ay;
-                    int PlatformW = (Width - ax)/ ax - 350;
-                    
-                    cpb2 = new CustomPictureBox2[ay, ax];
-    
-                    for (int a = 0; a < ay; a++)
-                    {
-                        for (int b = 0; b < ax; b++)
-                        {
-                            cpb2[a, b] = new CustomPictureBox2();
-                            
-                            //Position from Height, Position from Width
-                            cpb2[a, b].Height = PlatformH;
-                            cpb2[a, b].Width = PlatformW;
-    
-    
-                            //Position from Left, Position from Top
-                            cpb2[a, b].Left = b * PlatformW - 50;
-                            cpb2[a, b].Top = a * PlatformH + 20;
-    
-                            //If the value from i = 0, then put on the route from the brick pictureBox
-                            cpb2[a, b].BackgroundImage = Image.FromFile("../../Textures/Heart.png");
-                            cpb2[a, b].BackgroundImageLayout = ImageLayout.Stretch;
-    
-                            cpb2[a, b].Tag = "tileTag";
-    
-                            Controls.Add(cpb2[a, b]);  
-                        }
-                    }
-                }
-                catch (Exception exceptionGameOver)
-                {
-                    MessageBox.Show("Game over");
-                }
-            }
+            
             //This function, permits fill the platform with bricks, and pick the photos from code
     
             private void LoadTiles()
@@ -198,7 +150,7 @@ namespace Plan_B
             //Function work for player still play until it lose
             private void GamePlatformTimer_Tick_Tick(object sender, EventArgs e)
             {
-                sco.Text = "Score: " + ScoreIncrease.score;
+                sco.Text = "Score: " + GameData.score;
                 try
                 {
                     if (!GameData.GameStarted)
@@ -226,7 +178,7 @@ namespace Plan_B
                 if (e.KeyCode == Keys.Space)
                     GameData.GameStarted = true; 
             }
-           
+            
             //Function provides ball bounds inside platform
             private void rebotarPelota()
             {
@@ -234,11 +186,22 @@ namespace Plan_B
                 {
                     if(ball.Bottom > Height)
                     {
-                        //Application.Exit();
-                        GamePlatformTimer_Tick.Stop();
-                        MessageBox.Show("Game over");
-                        ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {ScoreIncrease.score} where name = '{PlayerName}'");
-                        this.Close();
+                        GameData.lifes--;
+                        
+                        repositionElements();
+                        updateItems();
+
+                        GameData.GameStarted = true;
+                        GamePlatformTimer_Tick.Start();
+                        
+                        if (GameData.lifes == 0)
+                        {
+                            GamePlatformTimer_Tick.Stop();
+                            MessageBox.Show("Game over");
+                            ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {GameData.score} " +
+                                                       $"where name = '{PlayerName}'");
+                            this.Close(); 
+                        }
                     }
     
                     if (ball.Left < 0 || ball.Right > Width)
@@ -264,26 +227,93 @@ namespace Plan_B
                                 if (cpb[i,j].Hits == 0)
                                 {
                                     //Calling the function to increase the score
-                                    ScoreIncrease.score = ScoreIncrease.score + 150;
+                                    GameData.score = GameData.score + 150;
                                     Controls.Remove(cpb[i,j]);
                                     cpb[i, j] = null;
                                 }
                                 GameData.dirY = -GameData.dirY;
-                            
+
+                                sco.Text = "Score: " + GameData.score;
                                 return;
                             }
                         }
                     }
-
-                
-
-            }
+                }
                 catch (Exception exceptionBallBounds)
                 {
                     MessageBox.Show("An error has ocurred with the ball bounds");
                 }
             }
+            
+            //Setting attributes for PanelScore
+            private void PanelScore(){
+                //Instantiate panel
+                score = new Panel();
+                
+                //Set panel elements
+                score.Width = Width;
+                score.Height = (int)(Height * 0.09);
 
-       
-    }
+                score.Top = score.Left = 0;
+
+                score.BackColor = Color.Transparent;
+            
+                hearts = new PictureBox[GameData.lifes];
+
+                for (int i = 0; i < GameData.lifes; i++)
+                {
+                    // Instantiation of PictureBox
+                    hearts[i] = new PictureBox();
+                    hearts[i].Height = hearts[i].Width = score.Height;
+                    
+                    hearts[i].BackgroundImage = Image.FromFile("../../Textures/Heart.png");
+                    hearts[i].BackgroundImageLayout = ImageLayout.Stretch;
+
+                    hearts[i].Top = 0;
+
+                    if (i == 0)
+                        hearts[i].Left = 20;
+                    else
+                    {
+                        hearts[i].Left = hearts[i - 1].Right + 5;
+                    }
+                }
+                //Instantiate label
+                sco = new Label();
+                
+                //Set label elements
+                sco.ForeColor = Color.White;
+
+                sco.Text = GameData.score.ToString();
+                sco.Font = new Font("Minecraft Evenings", 14F);
+                sco.TextAlign = ContentAlignment.MiddleCenter;
+
+                sco.Left = Width - 200;
+                sco.Height = score.Height;
+                
+                score.Controls.Add(sco);
+
+                foreach (var h in hearts)
+                {
+                    score.Controls.Add(h);
+                }
+                
+                Controls.Add(score);
+            }
+
+            //Relocate ball and picPaddle
+            private void repositionElements()
+            {
+                picPaddle.Left = (Width / 2) - (picPaddle.Width / 2);
+                ball.Top = picPaddle.Top - ball.Height;
+                ball.Left = picPaddle.Left + (picPaddle.Width / 2) - (ball.Width / 2);
+            }
+            
+            //Update remaining lives
+            private void updateItems()
+            {
+                score.Controls.Remove(hearts[GameData.lifes]);
+                hearts[GameData.lifes] = null;
+            }
+        }
 }

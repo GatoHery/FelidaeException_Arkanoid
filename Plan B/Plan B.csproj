@@ -118,7 +118,6 @@
         <Compile Include="Scoreboard.Designer.cs">
           <DependentUpon>Scoreboard.cs</DependentUpon>
         </Compile>
-        <Compile Include="ScoreIncrease.cs" />
         <Compile Include="Top10.cs">
           <SubType>UserControl</SubType>
         </Compile>
