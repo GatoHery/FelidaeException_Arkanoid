@@ -42,7 +42,7 @@ namespace Plan_B
             // picPaddle
             // 
             this.picPaddle.Location = new System.Drawing.Point(485, 707);
-            this.picPaddle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPaddle.Margin = new System.Windows.Forms.Padding(2);
             this.picPaddle.Name = "picPaddle";
             this.picPaddle.Size = new System.Drawing.Size(226, 64);
             this.picPaddle.TabIndex = 0;
@@ -50,6 +50,7 @@ namespace Plan_B
             // 
             // GamePlatformTimer_Tick
             // 
+            this.GamePlatformTimer_Tick.Interval = 25;
             this.GamePlatformTimer_Tick.Tick += new System.EventHandler(this.GamePlatformTimer_Tick_Tick);
             // 
             // GamePlatform
@@ -61,7 +62,7 @@ namespace Plan_B
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1874, 812);
             this.Controls.Add(this.picPaddle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GamePlatform";
             this.Text = "Felidae Arkanoid Exception";
             this.Load += new System.EventHandler(this.GamePlatform_Load);

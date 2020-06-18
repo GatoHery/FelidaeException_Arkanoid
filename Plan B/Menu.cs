@@ -9,6 +9,7 @@ namespace Plan_B
         public EventUsuerControlPlay OnClickButtonPlay;
         public EventUsuerControlPlay OnClickButtonTop10;
         public EventUsuerControlPlay OnClickButtonExit;
+        public EventUsuerControlPlay onClickButtonAllGamesView;
         public Menu()
         {
             InitializeComponent();
@@ -40,6 +41,15 @@ namespace Plan_B
             {
                 OnClickButtonExit(this, e);
             }
+        }
+
+        private void btnLastGames_Click(object sender, EventArgs e)
+        {
+            if (onClickButtonAllGamesView != null)
+            {
+                onClickButtonAllGamesView(this, e);
+            }
+
         }
     }
 }

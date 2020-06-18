@@ -34,5 +34,20 @@ namespace Plan_B
                 OnClickButtonReturn(this, e);
             }
         }
+
+        private void btnGameHistory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery("SELECT * FROM SCOREBOARD");
+
+                dgvScores.DataSource = dt;
+
+            }
+            catch (Exception exceptionUpdateScores)
+            {
+                MessageBox.Show("An error has ocurred");
+            }
+        }
     }
 }

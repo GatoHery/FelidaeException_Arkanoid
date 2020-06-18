@@ -107,7 +107,6 @@ C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\bin\Debug\Syste
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Text.Json.xml
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\bin\Debug\System.ValueTuple.xml
-C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csprojAssemblyReference.cache
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.exe.config
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Form1.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Properties.Resources.resources

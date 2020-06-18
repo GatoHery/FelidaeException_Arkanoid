@@ -219,8 +219,10 @@ namespace Plan_B
                             GamePlatformTimer_Tick.Stop();
                             MessageBox.Show("Game over");
                             ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {GameData.score} " +
-                                                       $"where name = '{PlayerName}'");
-                            this.Close(); 
+                                                   $"where name = '{PlayerName}'");
+                            ConnectionDB.ExecuteNonQuery($"INSERT INTO SCOREBOARD(name,score,dategame) VALUES ('{PlayerName}',{GameData.score},NOW())");
+
+                        this.Close(); 
                         }
                     }
     
@@ -229,8 +231,14 @@ namespace Plan_B
                         GameData.dirX = -GameData.dirX;
                         return;
                     }
-    
-                    if (ball.Bounds.IntersectsWith(picPaddle.Bounds))
+
+                    if (ball.Top < 0)
+                    {
+                        GameData.dirY = -GameData.dirY;
+                        return;
+                    }
+
+                if (ball.Bounds.IntersectsWith(picPaddle.Bounds))
                     {
                         GameData.dirY = -GameData.dirY;
                     }
