@@ -50,7 +50,7 @@ namespace Plan_B
             // 
             // GamePlatformTimer_Tick
             // 
-            this.GamePlatformTimer_Tick.Interval = 25;
+            this.GamePlatformTimer_Tick.Interval = 35;
             this.GamePlatformTimer_Tick.Tick += new System.EventHandler(this.GamePlatformTimer_Tick_Tick);
             // 
             // GamePlatform
