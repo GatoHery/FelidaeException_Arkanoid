@@ -1,0 +1,22 @@
+CREATE TABLE public.player
+(
+    name character varying(50) NOT NULL,
+    score integer,
+    CONSTRAINT player_pkey PRIMARY KEY (name)
+)
+
+CREATE TABLE public.scoreboard
+(
+    idscore integer NOT NULL DEFAULT,
+    name character varying(100),
+    score integer,
+    dategame date,
+    CONSTRAINT pk_idscore PRIMARY KEY (idscore),
+    CONSTRAINT fk_name FOREIGN KEY (name)
+        REFERENCES public.player (name) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+SELECT * FROM PLAYER order by score desc LIMIT 10
