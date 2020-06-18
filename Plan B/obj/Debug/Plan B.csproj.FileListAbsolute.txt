@@ -198,3 +198,4 @@ C:\Users\marvi\Desktop\POO\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Use
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Menu.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.Top10.resources
 C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan_B.UserRegister.resources
+C:\Users\Nathy\Documents\GitHub\FelidaeException_Arkanoid\Plan B\obj\Debug\Plan B.csprojAssemblyReference.cache

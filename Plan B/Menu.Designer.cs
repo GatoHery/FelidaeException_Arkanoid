@@ -35,7 +35,6 @@ namespace Plan_B
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnTop10 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnLastGames = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPlay
@@ -65,7 +64,7 @@ namespace Plan_B
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(795, 865);
+            this.btnExit.Location = new System.Drawing.Point(795, 609);
             this.btnExit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(1019, 130);
@@ -74,24 +73,11 @@ namespace Plan_B
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnLastGames
-            // 
-            this.btnLastGames.Font = new System.Drawing.Font("Minecraft Evenings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastGames.Location = new System.Drawing.Point(795, 605);
-            this.btnLastGames.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnLastGames.Name = "btnLastGames";
-            this.btnLastGames.Size = new System.Drawing.Size(1019, 130);
-            this.btnLastGames.TabIndex = 7;
-            this.btnLastGames.Text = "Last Games";
-            this.btnLastGames.UseVisualStyleBackColor = true;
-            this.btnLastGames.Click += new System.EventHandler(this.btnLastGames_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.btnLastGames);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnTop10);
             this.Controls.Add(this.btnPlay);
@@ -107,6 +93,5 @@ namespace Plan_B
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnTop10;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnLastGames;
     }
 }
