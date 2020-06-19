@@ -25,6 +25,7 @@ namespace Plan_B
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            Continue = true;
             try
             {
                 var name = txtName.Text;
@@ -41,19 +42,24 @@ namespace Plan_B
                     var dt = ConnectionDB.ExecuteQuery("SELECT Name " +
                                                        "FROM PLAYER");
 
+                    //Aqui cambiar la consulta y no poner el Foreach.... Para que pueda jugar alguien ya registrado
                     foreach (DataRow dr in dt.Rows)
                     {
+                        //dr[0].ToString().Equals(txtName.Text);
+                        //UserRegister user = new UserRegister();
                         if (dr[0].ToString().Equals(txtName.Text))
                         {
+
                             MessageBox.Show("The name already exist", "name repeated",
                                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            
-                            UserRegister user = new UserRegister();
+
+                            //UserRegister user = new UserRegister();
 
                             Continue = false;
                             break;
                         }
                     }
+                    
 
                     //luego se inicia el juego
                     if (Continue == true)

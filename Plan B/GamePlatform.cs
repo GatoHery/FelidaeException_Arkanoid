@@ -38,6 +38,8 @@ namespace Plan_B
             {
                 try
                 {
+
+                    GameData.initializeGame();
                     ScorePanel();
                     //Setting attributes for PictureBox player
                     picPaddle.BackgroundImage = Image.FromFile("../../Textures/Player.jpg");
@@ -110,6 +112,8 @@ namespace Plan_B
                             else
                                 imageBack = 3;
 
+                            //Generar un numero aleatorio para que sean blindados...
+                            //Tener cuidado con los numero aleatorios, necesitan seed que se tome con el tiempo
                             if (i == 2)
                             {
                                 cpb[i, j].BackgroundImage = Image.FromFile("../../Textures/Tileblinded.png");
