@@ -58,13 +58,11 @@ namespace Plan_B
                         this.Close();
                     }
                 }
-
             }
             catch (Exception exceptionNoInfo)
             {
                 MessageBox.Show("An error has ocurred :(");
-            }
-            
+            }            
         }
 
         //If the player didn't want to continue with the game he can return to main menu

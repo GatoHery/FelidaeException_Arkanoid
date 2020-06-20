@@ -19,7 +19,6 @@ namespace Plan_B
                 var dt = ConnectionDB.ExecuteQuery("SELECT * FROM PLAYER order by score desc LIMIT 10");
 
                 dgvScores.DataSource = dt;
-
             }
             catch (Exception exceptionUpdateScores)
             {
@@ -42,7 +41,6 @@ namespace Plan_B
                 var dt = ConnectionDB.ExecuteQuery("SELECT * FROM SCOREBOARD");
 
                 dgvScores.DataSource = dt;
-
             }
             catch (Exception exceptionUpdateScores)
             {

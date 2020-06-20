@@ -38,9 +38,9 @@ namespace Plan_B
             {
                 try
                 {
-
                     GameData.initializeGame();
                     ScorePanel();
+
                     //Setting attributes for PictureBox player
                     picPaddle.BackgroundImage = Image.FromFile("../../Textures/Player.jpg");
                     picPaddle.BackgroundImageLayout = ImageLayout.Stretch;
@@ -160,16 +160,12 @@ namespace Plan_B
                     {
                         if (e.X < (Width - picPaddle.Width))
                             picPaddle.Left = e.X;
-                    }
-                    
-    
+                    }                  
                 }
                 catch (Exception exceptionMouseMovement)
                 {
                     MessageBox.Show("An error has ocurred in your mouse");
                 }
-                
-                
             }
     
             //Function work for player still play until it lose
@@ -186,14 +182,12 @@ namespace Plan_B
                     ball.Left += GameData.dirX;
                     ball.Top += GameData.dirY;
     
-                    bounceBall();
-    
+                    bounceBall();    
                 }
                 catch (Exception exceptionGameTimer)
                 {
                     MessageBox.Show("An error has ocurred in the Game Timer");
-                }
-               
+                }               
             }
             
             //The KeyDown function is used to allow the start of the game 
@@ -224,7 +218,8 @@ namespace Plan_B
                             MessageBox.Show("Game over");
                             ConnectionDB.ExecuteNonQuery($"UPDATE PLAYER set score = {GameData.score} " +
                                                    $"where name = '{PlayerName}'");
-                            ConnectionDB.ExecuteNonQuery($"INSERT INTO SCOREBOARD(name,score,dategame) VALUES ('{PlayerName}',{GameData.score},NOW())");
+                            ConnectionDB.ExecuteNonQuery($"INSERT INTO SCOREBOARD(name,score,dategame) " +
+                                $"VALUES ('{PlayerName}',{GameData.score},NOW())");
 
                         this.Close(); 
                         }

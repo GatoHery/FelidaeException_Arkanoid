@@ -24,13 +24,11 @@ namespace Plan_B
                                                    "LIMIT 10");
 
                 dataGridView1.DataSource = dt;
-
             }
             catch (Exception exceptionUpdateScores)
             {
                 MessageBox.Show("An error has ocurred");
-            }
-            
+            }            
         }
         
         //If the player wants to return to main menu
@@ -39,8 +37,6 @@ namespace Plan_B
             Form1 Menu = new Form1();
             Menu.Show();
             this.Close();
-        }
-
-        
+        }        
     }
 }

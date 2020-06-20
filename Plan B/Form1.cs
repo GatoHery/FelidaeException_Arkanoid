@@ -6,7 +6,6 @@ namespace Plan_B
 {
     public partial class Form1 : Form
     {
-
         private Menu menu;
         private Top10 top;
         private UserRegister user;
@@ -70,7 +69,6 @@ namespace Plan_B
                 {
                     //No se hace nada 
                 }
-
             }
             catch (Exception exceptionExit)
             {

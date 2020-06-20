@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace Plan_B
 {
@@ -39,27 +38,19 @@ namespace Plan_B
                 else
                 {
                     //verificacion con la base de datos por si esta repetido
-                    var dt = ConnectionDB.ExecuteQuery("SELECT Name " +
-                                                       "FROM PLAYER");
+                    var dt = ConnectionDB.ExecuteQuery("SELECT Name FROM PLAYER ");
 
-                    //Aqui cambiar la consulta y no poner el Foreach.... Para que pueda jugar alguien ya registrado
                     foreach (DataRow dr in dt.Rows)
                     {
-                        //dr[0].ToString().Equals(txtName.Text);
-                        //UserRegister user = new UserRegister();
                         if (dr[0].ToString().Equals(txtName.Text))
                         {
-
                             MessageBox.Show("The name already exist", "name repeated",
                                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                            //UserRegister user = new UserRegister();
 
                             Continue = false;
                             break;
                         }
                     }
-                    
 
                     //luego se inicia el juego
                     if (Continue == true)
@@ -67,19 +58,23 @@ namespace Plan_B
                         ConnectionDB.ExecuteNonQuery("INSERT INTO PLAYER(Name) " +
                                                      $"VALUES('{txtName.Text}')");
 
-
+                        player = txtName.Text;
+                        GamePlatform game = new GamePlatform(player);
+                        game.Show();
+                    }
+                    //Para un jugador previamente registrado 
+                    else
+                    {
                         player = txtName.Text;
                         GamePlatform game = new GamePlatform(player);
                         game.Show();
                     }
                 }
-
             }
             catch (Exception exceptionNoInfo)
             {
                 MessageBox.Show("An error has ocurred :(");
             }
-
         }
     }
 }
